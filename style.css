@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,41 +11,8 @@ body {
   color: #333;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #222;
-  color: #fff;
-  position: sticky;
-  top: 0;
-}
 
-.navbar .logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #00bcd4;
-}
-
-/* Hero */
-/* Hero Section */
 .hero {
   background: linear-gradient(to right, #00bcd4, #0097a7);
   color: white;
@@ -56,15 +23,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Makes it responsive */
-  gap: 2rem; /* Space between image and text */
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .hero-image img {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%; /* Circle image */
+  border-radius: 50%; 
   border: 3px solid white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -77,7 +44,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Sections */
+
 section {
   padding: 3rem 2rem;
   text-align: center;
@@ -87,7 +54,7 @@ section {
   background: #f9f9f9;
 }
 
-/* Projects */
+
 .projects .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -114,28 +81,10 @@ section {
   text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 1rem;
   background: #222;
   color: #fff;
-}
-
-/* Responsive Nav */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    display: none;
-    padding: 1rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
 }
